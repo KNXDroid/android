@@ -8,7 +8,7 @@ To get started with Android/KNXDroid, you'll need to get familiar with [Source C
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
-repo init -u https://github.com/KNXDroid/android.git -b lineage-21.0 --git-lfs --depth=1
+repo init -u https://github.com/KNXDroid/android.git -b lineage-22.0 --git-lfs --depth=1
 ```
 Then to sync up:
 ```
