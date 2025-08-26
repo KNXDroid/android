@@ -55,7 +55,6 @@
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
   <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" />
-  <project path="vendor/crowdin" name="LineageOS/android_vendor_crowdin" />
   <project path="vendor/lineage" name="KNXDroid/android_vendor_lineage" />
 
   <!-- Legacy AOSP additions -->
@@ -214,16 +213,4 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,lanai-vendor" />
   <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,lanai-vendor" />
   <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,lanai-vendor" />
-
-  <!-- Infrastructure -->
-  <project path="lineage/charter" name="LineageOS/charter" groups="infra" revision="main" />
-  <project path="lineage/crowdin" name="LineageOS/cm_crowdin" groups="infra" revision="main" />
-  <project path="lineage/hudson" name="LineageOS/hudson" groups="infra" revision="main" />
-  <project path="lineage/mirror" name="LineageOS/mirror" groups="infra" revision="main" />
-  <project path="lineage/website" name="LineageOS/www" groups="infra" revision="main" />
-  <project path="lineage/wiki" name="LineageOS/lineage_wiki" groups="infra" revision="main" />
-
-  <!-- Tools -->
-  <project path="lineage/contributors-cloud-generator" name="LineageOS/contributors-cloud-generator" groups="tools" revision="main" />
-  <project path="lineage/scripts" name="LineageOS/scripts" groups="tools" revision="main" />
 </manifest>
