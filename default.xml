@@ -1031,5 +1031,6 @@
   </project>
 
   <include name="snippets/crdroid.xml" />
+  <include name="snippets/knxdroid.xml" />
   <include name="snippets/lineage.xml" />
 </manifest>

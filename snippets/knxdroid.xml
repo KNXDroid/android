@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote  name="knxdroid"
+             fetch="https://github.com/"
+             sync-c="true"
+             sync-j="4"
+             revision="refs/heads/KNXDroid-16.2" />
+
+    <!-- crDroid additions -->
+    <project path="android" name="KNXDroid/android" remote="knxdroid" />
+
+    <project path="build/make" name="KNXDroid/android_build" groups="pdk,sysui-studio" remote="knxdroid" >
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+
+    <project path="build/soong" name="KNXDroid/android_build_soong" groups="pdk,tradefed,sysui-studio" remote="knxdroid" >
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+
+    <project path="art" name="KNXDroid/android_art" groups="pdk" remote="knxdroid" />
+
+    <project path="bionic" name="KNXDroid/android_bionic" groups="pdk" remote="knxdroid" />
+
+    <project path="bootable/recovery" name="KNXDroid/android_bootable_recovery" groups="pdk" remote="knxdroid" />
+
+    <project path="frameworks/av" name="KNXDroid/android_frameworks_av" groups="pdk,sysui-studio" remote="knxdroid" />
+    <project path="frameworks/base" name="KNXDroid/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="knxdroid" />
+    <project path="frameworks/native" name="KNXDroid/android_frameworks_native" groups="pdk" remote="knxdroid" />
+    <project path="frameworks/opt/telephony" name="KNXDroid/android_frameworks_opt_telephony" groups="pdk,sysui-studio" remote="knxdroid" />
+
+
+    <project path="lineage-sdk" name="KNXDroid/android_lineage-sdk" remote="knxdroid" />
+
+    <project path="packages/apps/Launcher3" name="KNXDroid/android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="knxdroid" />
+    <project path="packages/apps/LineageParts" name="KNXDroid/android_packages_apps_LineageParts" remote="knxdroid" />
+    <project path="packages/apps/Settings" name="KNXDroid/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="knxdroid" />
+    <project path="packages/apps/SettingsIntelligence" name="KNXDroid/android_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="knxdroid" />
+    <project path="packages/inputmethods/LatinIME" name="KNXDroid/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="knxdroid" />
+
+    <project path="system/core" name="KNXDroid/android_system_core" groups="pdk" remote="knxdroid" />
+    <project path="system/sepolicy" name="KNXDroid/android_system_sepolicy" groups="pdk" remote="knxdroid" />
+    <project path="system/vold" name="KNXDroid/android_system_vold" groups="pdk" remote="knxdroid" />
+
+    <project path="vendor/lineage" name="KNXDroid/android_vendor_lineage" remote="knxdroid" />
+
+</manifest>
